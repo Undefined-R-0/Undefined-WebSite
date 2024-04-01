@@ -11,6 +11,9 @@
           <!-- <a href="#"
             class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log
             in</a> -->
+          <div class="px-3">
+            <Switch></Switch>
+          </div>
           <a
             href="#"
             class="mr-0 rounded-lg bg-purple-700 px-4 py-2 text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800 lg:mr-0 lg:px-5 lg:py-2.5"
@@ -81,6 +84,8 @@
 <script lang="ts" setup>
 import { Bars3Icon, GlobeAsiaAustraliaIcon } from "@heroicons/vue/24/outline"
 import { ref } from "vue"
+import { Switch } from "vue-dark-switch"
+
 // import { gsap } from "gsap";
 
 const isMenuOpen = ref(true)

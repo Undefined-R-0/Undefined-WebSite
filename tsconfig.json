@@ -26,7 +26,7 @@
     "allowJs": true,
     "noImplicitThis": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.d.ts", "src/types/**/*.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
