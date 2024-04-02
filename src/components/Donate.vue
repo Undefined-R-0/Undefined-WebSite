@@ -1,6 +1,6 @@
 <template>
   <!-- Start block -->
-  <section class="container mx-auto bg-gray-50">
+  <section class="container mx-auto">
     <div class="mx-auto px-4 py-8 lg:px-6 lg:py-16">
       <div class="mx-auto max-w-screen-sm text-center">
         <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900">好善乐捐</h2>

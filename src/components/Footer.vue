@@ -1,6 +1,6 @@
 <template>
   <!-- End block -->
-  <footer class="bg-white">
+  <footer class="container mx-auto">
     <div class="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10 lg:py-16">
       <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
         <div>

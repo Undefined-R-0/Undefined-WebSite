@@ -1,6 +1,6 @@
 <template>
   <!-- Start block -->
-  <div class="container mx-auto bg-gray-50 px-5 py-5 lg:px-5 lg:py-10">
+  <div class="container mx-auto px-5 py-5 lg:px-5 lg:py-10">
     <!-- 图片在右边 -->
     <div class="flex flex-wrap justify-between gap-3 lg:flex-nowrap xl:flex-nowrap">
       <!-- 描述 -->

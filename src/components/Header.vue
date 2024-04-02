@@ -1,6 +1,6 @@
 <template>
   <div class="container fixed mx-auto justify-between" style="z-index: 1">
-    <div class="border-gray-200 bg-white py-2.5">
+    <div class="border-gray-200 py-2.5">
       <div class="flex w-full flex-wrap items-center justify-between">
         <a href="#" class="flex items-center">
           <!-- <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> -->
@@ -32,7 +32,7 @@
             <Bars3Icon class="h-6 w-6" />
           </button>
         </div>
-        <div ref="navCloseDiv" class="hidden w-full items-center justify-between bg-white lg:order-1 lg:flex lg:w-auto">
+        <div ref="navCloseDiv" class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto">
           <ul class="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
             <li>
               <a

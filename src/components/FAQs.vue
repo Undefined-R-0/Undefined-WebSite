@@ -1,6 +1,6 @@
 <template>
   <!-- Start block -->
-  <section class="bg-white">
+  <section class="container mx-auto">
     <div class="mx-auto max-w-screen-xl px-4 pb-8 lg:px-6 lg:pb-24">
       <h2 class="mb-6 text-center text-3xl font-extrabold tracking-tight text-gray-900 lg:mb-8 lg:text-3xl">
         Frequently asked questions

@@ -13,4 +13,4 @@ const config: Config = {
   plugins: [variableColorsPlugin(colors)],
 }
 
-export default config
+export default config satisfies Config

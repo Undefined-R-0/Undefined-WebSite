@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto bg-gray-50 px-4 py-5">
+  <div class="container mx-auto px-4 py-5">
     <!-- 文字标题 -->
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="mb-6 text-3xl font-bold md:text-4xl md:!leading-[50px]">我们的愿景</h2>
