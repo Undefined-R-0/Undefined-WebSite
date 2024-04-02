@@ -2,7 +2,7 @@
   <div class="mx-auto flex justify-center px-4 pb-10 pt-20 lg:gap-8 lg:py-10 lg:pt-20 xl:gap-0">
     <div class="">
       <h1
-        class="xl:text-10xl mb-4 max-w-2xl text-wrap text-5xl font-extrabold leading-none tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+        class="mb-4 text-wrap text-7xl font-extrabold leading-none tracking-tight sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl"
       >
         <span class="jump text-purple-700">U</span> ndefined <br />
         <span class="jump text-purple-700">U</span> nidentified <br />

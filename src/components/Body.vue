@@ -17,6 +17,7 @@ import ListContainer from "./ListScroll.vue"
 import TargetCard from "./TargetCard.vue"
 import Comment from "./Donate.vue"
 import GaoKao from "@/assets/img/GaoKao.jpg"
+import MTFImg from "@/assets/img/MTF.jpg"
 
 import { ref } from "vue"
 
@@ -35,7 +36,7 @@ const picIntros = ref<TargetCardProps[]>([
     title: "性少数群体",
     content:
       "性少数群体是指性别认同、性取向、性别表达等方面与传统性别规范不符的人群。他们在社会中常常受到歧视、排斥、甚至暴力对待。在中国，性少数群体的权益保障仍然是一个亟待解决的问题。",
-    img: GaoKao,
+    img: MTFImg,
     imgDirection: "right"
   }
 ])
