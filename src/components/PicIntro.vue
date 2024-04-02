@@ -1,13 +1,13 @@
 <template>
   <!-- Start block -->
-  <div class="container mx-auto bg-gray-50 px-5 py-5 dark:bg-gray-800 lg:px-5 lg:py-10">
+  <div class="container mx-auto bg-gray-50 px-5 py-5 lg:px-5 lg:py-10">
     <!-- 图片在右边 -->
     <div class="flex flex-wrap justify-between gap-3 lg:flex-nowrap xl:flex-nowrap">
       <!-- 描述 -->
       <div
-        class="flex flex-col justify-center divide-y-2 divide-gray-300 text-center text-gray-500 dark:text-gray-400 sm:text-lg lg:max-w-[50%] lg:text-start xl:max-w-[50%] xl:text-start"
+        class="flex flex-col justify-center divide-y-2 divide-gray-300 text-center text-gray-500 sm:text-lg lg:max-w-[50%] lg:text-start xl:max-w-[50%] xl:text-start"
       >
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">{{ props.title }}</h2>
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">{{ props.title }}</h2>
         <p class="text-balance font-light lg:text-xl">
           {{ props.content }}
         </p>
