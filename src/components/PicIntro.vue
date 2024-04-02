@@ -8,7 +8,7 @@
         class="flex flex-col justify-center divide-y-2 divide-gray-300 text-center text-gray-500 sm:text-lg lg:max-w-[50%] lg:text-start xl:max-w-[50%] xl:text-start"
       >
         <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">{{ props.title }}</h2>
-        <p class="text-balance font-light lg:text-xl">
+        <p ref="textDiv" class="text-balance font-light lg:text-xl">
           {{ props.content }}
         </p>
 
@@ -34,11 +34,15 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, withDefaults } from "vue"
+import { defineProps, withDefaults, onMounted } from "vue"
 import GaoKao from "@/assets/img/GaoKao.jpg"
 import { ref } from "vue"
+import gsap from "gsap"
+import TextPlugin from "gsap/TextPlugin"
+import ScrollTrigger from "gsap/ScrollTrigger"
 
 const picture = ref<HTMLImageElement | null>(null)
+const textDiv = ref<HTMLDivElement | null>(null)
 
 enum ImgDirection {
   LEFT = "left",
@@ -72,6 +76,22 @@ window.addEventListener("scroll", () => {
   } else {
     img.classList.remove("opacity-100")
   }
+})
+
+onMounted(() => {
+  gsap.registerPlugin(TextPlugin)
+  gsap.registerPlugin(ScrollTrigger)
+  gsap.from(textDiv.value, {
+    duration: 5,
+    text: "",
+    ease: "esaeIn",
+    scrollTrigger: {
+      trigger: textDiv.value,
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 1
+    }
+  })
 })
 </script>
 
