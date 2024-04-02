@@ -15,7 +15,7 @@
 
       <div class="space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
         <a
-          href="#"
+          :href="githubUrl"
           class="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-5 py-3 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800 sm:w-auto"
         >
           加入我们
@@ -28,6 +28,9 @@
 <script lang="ts" setup>
 // import { onMounted } from "vue"
 // import gsap from "gsap"
+
+import { getGithubUrl } from "@/injects"
+const githubUrl = getGithubUrl()
 
 // onMounted(() => {
 //   gsap.to(".jump", {

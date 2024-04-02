@@ -3,8 +3,8 @@
   <ListContainer></ListContainer>
   <TargetCard></TargetCard>
   <PicIntro v-for="picIntro in picIntros" :key="picIntro.title" v-bind="picIntro"></PicIntro>
-  <Comment></Comment>
   <Reference></Reference>
+  <Comment></Comment>
   <Footer></Footer>
 </template>
 
@@ -15,7 +15,7 @@ import Reference from "./Reference.vue"
 import Footer from "./Footer.vue"
 import ListContainer from "./ListScroll.vue"
 import TargetCard from "./TargetCard.vue"
-import Comment from "./Comment.vue"
+import Comment from "./Donate.vue"
 import GaoKao from "@/assets/img/GaoKao.jpg"
 
 import { ref } from "vue"

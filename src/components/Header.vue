@@ -1,6 +1,6 @@
 <template>
   <div class="container fixed mx-auto justify-between" style="z-index: 1">
-    <div class="border-gray-200 bg-white py-2.5 dark:bg-gray-900">
+    <div class="border-gray-200 bg-white py-2.5">
       <div class="flex w-full flex-wrap items-center justify-between">
         <a href="#" class="flex items-center">
           <!-- <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> -->
@@ -15,10 +15,13 @@
             <Switch></Switch>
           </div>
           <a
-            href="#"
+            :href="githubUrl"
             class="mr-0 rounded-lg bg-purple-700 px-4 py-2 text-sm font-medium text-white hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800 lg:mr-0 lg:px-5 lg:py-2.5"
           >
-            加入咱们
+            <div class="flex justify-center space-x-2">
+              <span>加入咱们</span>
+              <Github size="20"></Github>
+            </div>
           </a>
           <button
             type="button"
@@ -69,7 +72,7 @@
             </li>
             <li>
               <a
-                href="#"
+                :href="githubUrl"
                 class="block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-purple-700 lg:dark:hover:bg-transparent lg:dark:hover:text-white"
                 >联系我们</a
               >
@@ -85,7 +88,9 @@
 import { Bars3Icon, GlobeAsiaAustraliaIcon } from "@heroicons/vue/24/outline"
 import { ref } from "vue"
 import { Switch } from "vue-dark-switch"
-
+import { Github } from "@icon-park/vue-next"
+import { getGithubUrl } from "@/injects"
+const githubUrl = getGithubUrl()
 // import { gsap } from "gsap";
 
 const isMenuOpen = ref(true)
